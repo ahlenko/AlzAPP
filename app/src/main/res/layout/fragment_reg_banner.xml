@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.logregister.fragments.logreg.RegBannerFragment">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/top_guide"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/bunner_text_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/bunner_text_first"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+
+    <TextView
+        android:id="@+id/banner_text_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/banner_text_second"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/bunner_text_first" />
+
+    <Button
+        android:id="@+id/more_info_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/more_info"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/banner_text_second" />
+
+    <Button
+        android:id="@+id/reb_button"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/inter_semibold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">AlzTestApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_title">ClinicalSelfie Alzheimer\'s Test</string>
+    <string name="register">Register</string>
+    <string name="more_info">More info</string>
+    <string name="banner_text_second">Do you want to make sure that it is not a first classic sign of alzheumer\'s?</string>
+    <string name="bunner_text_first">Are you forgetting more than before?</string>
+    <string name="reg_text_add">*AT LEAST 4 CHARACTERS. IT WILL BE ASKED ONCE WHEN YOU LOG-IN FROM A NEW DEVICE.</string>
+    <string name="password">PASSWORD</string>
+    <string name="user_name">USER NAME</string>
+    <string name="complete_reg">COMPLETE REGISTRATION</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="switch_text">BY CHECKING THE BOX YOU AGREE WITH TERMS AND CONDITIONS OF CLINICALSELFIE INC.</string>
+    <string name="registration">Registration</string>
+    <string name="signin_description">Please note that if you have already registered with an email or a phone number, you can continue using it as your login.</string>
+    <string name="sign_in_title">AUIHORIZATION</string>
+    <string name="deactivate_accaunt">Deactivate accaunt</string>
+    <string name="logout">Logout</string>
+    <string name="more_information">More Information</string>
+    <string name="answer_more_questions">Answer More Questions</string>
+    <string name="about_us">About Us</string>
+    <string name="my_progress">My Progress</string>
+    <string name="add_quastion_description">DISPLAY YOUR PERFORMANCE SCORE 7 QUESTIONS EVERY WEEK</string>
+    <string name="pay_sam">$9.99/12 MONTHS</string>
+    <string name="free_quastion_description">2 QUESTIONS EVERY WEEK</string>
+    <string name="free_membership">FREE MEMBERSHIP</string>
+    <string name="remaihihg_question">YOU HAVE 4 QUESTIONS REMAINING</string>
+    <string name="your_answea_question">SINCE REGISTRATION YOU ANSWERED 4 QUESTIONS</string>
+    <string name="question_text_sample">Remember these images, then select option A.</string>
+    <string name="question_num_sample">1 Question</string>
+    <string name="question_title_sample">Your</string>
+    <string name="answer_it">Answer it</string>
+    <string name="registration_date">Registration date</string>
+    <string name="data_sample">12/20/23</string>
+    <string name="total_questions">Total questions</string>
+    <string name="answered">answered:</string>
+    <string name="num_answared_sample">1</string>
+    <string name="res_descr_sample">Several signs of memory impairment were detected according to our research</string>
+    <string name="no_wornings_score_sample">No wornings</string>
+    <string name="res_means_gipertext">See whar my result means</string>
+    <string name="see_the_result">See\nthe\nresult</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="request_error">Undefined request error</string>
+    <string name="send_request_error">Error sending request</string>
+    <string name="pass_contains_ch_error">The password contains forbidden characters</string>
+    <string name="pass_size_error">Password must be at least 4 characters</string>
+    <string name="email_format_error">The email does not match the format</string>
+    <string name="fields_empty_error">Not all fields are filled</string>
+    <string name="no_checked_terms_error">Check the box of terms and conditions</string>
+    <string name="no_right_login_data">No user found with provided credentials\n</string>
+    <string name="internet_unavalible">There is no access to the Internet</string>
+</resources>

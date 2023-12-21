@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.mainmenu.fragments.resulttest.TestResultFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/test_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="My Progress"
+        android:textAllCaps="true"
+        android:textColor="#4D1F9F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toTopOf="@+id/top_guide" />
+
+    <TextView
+        android:id="@+id/reg_data_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/registration_date"
+        android:textAllCaps="true"
+        android:textColor="#4D1F9F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_result_title" />
+
+    <TextView
+        android:id="@+id/reg_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:background="#673AB7"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/data_sample"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_data_title" />
+
+    <TextView
+        android:id="@+id/total_question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/total_questions"
+        android:textAllCaps="true"
+        android:textColor="#4D1F9F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_data_text" />
+
+    <TextView
+        android:id="@+id/answered_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/answered"
+        android:textAllCaps="true"
+        android:textColor="#4D1F9F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_question_title" />
+
+    <TextView
+        android:id="@+id/answered_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="#673AB7"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/num_answared_sample"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/answered_title"
+        app:layout_constraintStart_toEndOf="@+id/answered_title"
+        app:layout_constraintTop_toTopOf="@+id/answered_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/result_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/res_descr_sample"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#4D1F9F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart_progress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/see_result_button"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toTopOf="@+id/see_result_button" />
+
+    <TextView
+        android:id="@+id/result_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="@string/no_wornings_score_sample"
+        android:textAllCaps="true"
+        android:textColor="#4D1F9F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/result_means_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/square_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/mini_square"
+        app:layout_constraintBottom_toBottomOf="@+id/test_result_title"
+        app:layout_constraintEnd_toStartOf="@+id/test_result_title"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toTopOf="@+id/test_result_title" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toTopOf="@+id/top_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/result_means_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/res_means_gipertext"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/see_result_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/see_the_result"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/right_guide"
+        app:layout_constraintStart_toStartOf="@+id/left_guide"
+        app:layout_constraintTop_toBottomOf="@+id/answered_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/result_means_button"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/smile_1_image"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
