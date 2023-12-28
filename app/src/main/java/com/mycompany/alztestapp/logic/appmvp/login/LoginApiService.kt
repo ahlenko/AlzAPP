@@ -9,7 +9,7 @@ import retrofit2.http.POST
 
 interface LoginApiService {
     @FormUrlEncoded
-    @POST(LoginRepository.SERVER_REG_URL)
+    @POST(SERVER_REG_URL)
     fun registerUser(
         @Field(KEY_EMAIL) email: String,
         @Field(KEY_PASS) password: String,
@@ -19,13 +19,16 @@ interface LoginApiService {
     ): Call<RegistrationModel>
 
     @FormUrlEncoded
-    @POST(LoginRepository.SERVER_LOG_URL)
+    @POST(SERVER_LOG_URL)
     fun loginUser(
         @Field(KEY_EMAIL) email: String,
         @Field(KEY_PASS) password: String
     ): Call<LoginModel>
 
     companion object{
+        const val SERVER_REG_URL = "user/register/"
+        const val SERVER_LOG_URL = "user/login/"
+
         const val KEY_EMAIL = "email"
         const val KEY_PASS = "password"
         const val KEY_DATE = "date_of_birth"

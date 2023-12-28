@@ -36,7 +36,7 @@ class SplashFragment : Fragment() {
         }, TIMEOUT_SCREEN)
     }
 
-    companion object{
+    companion object {
         const val TIMEOUT_SCREEN:Long = 3000
     }
 }

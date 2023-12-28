@@ -62,9 +62,7 @@ class RegisterFragment : Fragment(), LoginContract.View {
     }
 
     override fun onLoginError(message: String) {
-        requireActivity().runOnUiThread{
-            DialogHelper.showInformationDialog(requireContext(), message, getString(R.string.confirm))
-        }
+        DialogHelper.showInformationDialog(requireContext(), message, getString(R.string.confirm))
     }
 
     override fun onSuccessLogin(sessionKey: String) {

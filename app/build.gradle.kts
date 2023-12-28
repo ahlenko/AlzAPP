@@ -40,6 +40,10 @@ android {
 }
 
 dependencies {
+    //RxJava components
+    implementation ("io.reactivex.rxjava3:rxjava:3.1.8")
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+
     //Chart components
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
